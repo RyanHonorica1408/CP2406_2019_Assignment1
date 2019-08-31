@@ -124,5 +124,9 @@ public class Car {
     public int getVehicleId() {
         return vehicleId;
     }
+
+    public void travelOneSec(){
+        this.distance += ((this.speed*1000)/3600);
+    }
 }
 
