@@ -128,5 +128,21 @@ public class Car {
     public void travelOneSec(){
         this.distance += ((this.speed*1000)/3600);
     }
+
+    public void slowDown(boolean redLight){
+        if(redLight){
+            setSpeed((float) (getSpeed()*(0.8)));
+        }
+    }
+
+    public void speedUp(boolean greenLight){
+        if(greenLight){
+            setSpeed(getSpeed()+5);
+        }
+    }
+
+    public  void stop(boolean redLight){
+        setSpeed(0);
+    }
 }
 
