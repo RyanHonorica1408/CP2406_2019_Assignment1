@@ -131,13 +131,17 @@ public class Car {
 
     public void slowDown(boolean redLight){
         if(redLight){
-            setSpeed((float) (getSpeed()*(0.8)));
+            setSpeed((float) (getSpeed()*(0.85)));
         }
     }
 
     public void speedUp(boolean greenLight){
         if(greenLight){
-            setSpeed(getSpeed()+5);
+            if(this.speed ==0){
+            setSpeed(getSpeed()+2);}
+            else{
+                setSpeed((float) (getSpeed()*(1.5)));
+            }
         }
     }
 
