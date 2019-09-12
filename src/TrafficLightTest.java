@@ -54,7 +54,7 @@ TrafficLight trafficLight = new TrafficLight();
 
     @Test
     void goToRed() {
-        trafficLight.GoToRed();
+        trafficLight.goToRed();
         assertTrue(trafficLight.isRed);
     }
 
