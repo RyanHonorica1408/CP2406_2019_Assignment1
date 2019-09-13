@@ -3,11 +3,12 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class TrafficLightTest {
-TrafficLight trafficLight = new TrafficLight();
+    TrafficLight trafficLight = new TrafficLight();
+
     @Test
     void setOnRoad() {
         trafficLight.setOnRoad(1);
-        assertEquals(1,trafficLight.getOnRoad());
+        assertEquals(1, trafficLight.getOnRoad());
     }
 
     @Test
@@ -37,19 +38,19 @@ TrafficLight trafficLight = new TrafficLight();
     @Test
     void setTrafficLightId() {
         trafficLight.setTrafficLightId(1);
-        assertEquals(1,trafficLight.getTrafficLightId());
+        assertEquals(1, trafficLight.getTrafficLightId());
     }
 
     @Test
     void getOnRoad() {
         trafficLight.setOnRoad(1);
-        assertEquals(1,trafficLight.getOnRoad());
+        assertEquals(1, trafficLight.getOnRoad());
     }
 
     @Test
     void getTrafficLightId() {
         trafficLight.setTrafficLightId(1);
-        assertEquals(1,trafficLight.getTrafficLightId());
+        assertEquals(1, trafficLight.getTrafficLightId());
     }
 
     @Test

@@ -4,28 +4,29 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RoadTest {
     Road road = new Road();
+
     @Test
     void getLength() {
         road.setLength(1);
-        assertEquals(1,road.getLength());
+        assertEquals(1, road.getLength());
     }
 
     @Test
     void setLength() {
         road.setLength(1);
-        assertEquals(1,road.getLength());
+        assertEquals(1, road.getLength());
     }
 
     @Test
     void setRoadId() {
         road.setRoadId(1);
-        assertEquals(1,road.getRoadId());
+        assertEquals(1, road.getRoadId());
     }
 
     @Test
     void getRoadId() {
         road.setRoadId(1);
-        assertEquals(1,road.getRoadId());
+        assertEquals(1, road.getRoadId());
     }
 
     @Test

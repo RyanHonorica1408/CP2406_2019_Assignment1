@@ -16,7 +16,8 @@ public class Car {
     private float breadth;
     float pastSpeeds[];
     private Color COLOR;
-//Initialisation of variables.
+
+    //Initialisation of variables.
     public Car() {
         length = 5;
         this.breadth = (float) (0.5 * length);
@@ -29,7 +30,8 @@ public class Car {
         this.isEmergencyVehicle = false;
         this.COLOR = Color.BLACK;
     }
-//Setters and getters of each of the variables.
+
+    //Setters and getters of each of the variables.
     public void setLength(float length) {
         this.length = length;
     }
@@ -133,7 +135,8 @@ public class Car {
     public int getVehicleId() {
         return vehicleId;
     }
-public void travelOneSec() {
+
+    public void travelOneSec() {
 //        Converts current speed into one second distance in meters and then adds this to the current distance.
         this.distance += ((this.speed * 1000) / 3600);
     }

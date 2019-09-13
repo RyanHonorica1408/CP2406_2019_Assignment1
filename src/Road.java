@@ -4,13 +4,15 @@ public class Road {
     * Methods are primarily setters and getters. */
 //    Variable initialization.
     private int roadId;
-    private Boolean trafficLightStart,trafficLightEnd;
+    private Boolean trafficLightStart, trafficLightEnd;
     private float length;
-    public Road(){
+
+    public Road() {
         this.roadId = 0;
 
     }
-//Getters and setters methods.
+
+    //Getters and setters methods.
     public float getLength() {
         return length;
     }
